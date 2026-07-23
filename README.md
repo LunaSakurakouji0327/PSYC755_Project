@@ -10,7 +10,7 @@ One or two sentences on what this project asks and what it found. Replace this b
 | Name | GitHub username |
 |---|---|
 |Chao Ding |cding56 |
-| | |
+|Yuhao Wang |yuhaowang2025|
 | | |
 | | |
 | | |
