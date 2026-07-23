@@ -1,7 +1,7 @@
 # [Project Title]
 
-**Group:** [number or name]
-**Course:** [course number], [semester]
+**Group:** [3]
+**Course:** [PSYC755], [2026 Summer]
 
 One or two sentences on what this project asks and what it found. Replace this before you submit.
 
@@ -13,7 +13,7 @@ One or two sentences on what this project asks and what it found. Replace this b
 |Yuhao Wang |yuhaowang2025|
 |Jingyi Zhou|JingyiZ-Created|
 |Peiqi Li |Peiqili196 |
-| | |
+|Jiangran Gu|LunaSakurakouji0327 |
 
 If your GitHub handle is not your name, this table is how we connect your commits to you. Fill it in during the first 72 hours (each member can fill in their own name to satisfy the initial commitment requirement).
 
