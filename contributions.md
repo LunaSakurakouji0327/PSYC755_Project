@@ -1,9 +1,9 @@
 # Contributions
 
-**Group [number/name]:** [Makeup A Fun Professional Group Name]
-**Group Members:** [List all members]
-**Project:** [title of your manuscript]
-**Repository:** [link to this repo]
+**Group:** Communication Apprehension Research Team
+**Group Members:** Chao Ding, Jiangran Gu, Peiqi Li, Yuhao Wang, Jingyi Zhou
+**Project:** Communication Apprehension and Transportation Use: A Group Synthesis of Five Research Memos
+**Repository:** https://github.com/LunaSakurakouji0327/PSYC755_Project
 
 ---
 
@@ -45,67 +45,53 @@ The last bullet in each section asks which portion of the data science process y
 
 ---
 
-## Example (delete this section before submitting)
+## Student 1: Chao Ding (`cding56`)
 
-### Jane Doe (`jdoe-wisc`)
-
-- **The component I "owned" and that I summarize here is best described as** the modeling and training or fit step — the KNN classifier that takes the cleaned feature matrix and predicts the target class, together with the grid search that chose the value of *K*.
-- **You can find this contribution in a file called** `src/models/knn.py` **at lines** 1–98, and in `manuscript.qmd` at lines 112–168 where the model is described and the grid-search results table is generated. [Permalink to `knn.py`](https://github.com/ORG/REPO/blob/a3f2c1e.../src/models/knn.py#L1-L98)
-- **Owning this component means** I chose KNN over the two other classifiers we considered (write-up in PR #21); I designed the *K*-grid (odd values from 3 to 51) and the 5-fold stratified cross-validation used to score each candidate; I wrote the fit-and-predict loop; and I debugged the scaling bug that was letting one high-variance feature dominate the distance metric. I did not build the feature matrix — Marcus did the wrangling, and he covers that in his section.
-- **The commits or PRs that are most relevant are** [#21 — model selection write-up](https://github.com/ORG/REPO/pull/21), [#24 — KNN + grid search over *K*](https://github.com/ORG/REPO/pull/24), and [a3f2c1e — scale features before distance calc](https://github.com/ORG/REPO/commit/a3f2c1e).
-- **The portion(s) of the [data science process](https://adamrossnelson.github.io/integsci375-public/readings/data_science_processes.html) that this effort contributes to is** stage 5, **Select + Apply** — reviewing candidate techniques, selecting KNN, and applying it with a grid search over *K* to produce the predictive model the manuscript reports on. It also has a foot in stage 6, **Check + Recheck**: the 5-fold cross-validation inside the grid search is where each candidate *K* is validated against held-out folds before the final *K* is chosen.
+- **The component I "owned" and that I summarize here is best described as** the transportation mode prediction analysis — comparing communication apprehension's predictive accuracy for public transit use versus ride-share use using simple linear regression models and RMSE comparison.
+- **You can find this contribution in a file called** `group_memo/Chao_memo.qmd` **at lines** 1–181. [Permalink to Chao_memo.qmd](https://github.com/[ORG]/[REPO]/blob/[COMMIT]/group_memo/Chao_memo.qmd#L1-L181)
+- **Owning this component means** I designed the research question comparing RMSE between public transit and ride-share prediction models; I implemented the data cleaning and recoding of the 12 PRCA items to a 1–5 scale with reverse-scoring; I built the two simple linear regression models; I created the RMSE comparison visualization; and I wrote the interpretation of results showing ride-share use as more predictable. I did not collect the original data — that was provided through the Qualtrics export.
+- **The commits or PRs that are most relevant are** [add relevant commit/PR links]
+- **The portion of the data science process that this effort contributes to is** stage 5, **Select + Apply** — selecting linear regression as the modeling approach and applying it to compare prediction accuracy across transportation modes. It also contributes to stage 6, **Check + Recheck** — using RMSE as an evaluation metric to determine which outcome is more accurately predicted by communication apprehension.
 
 ---
 
-## Student 1: [Full Name] (`github-username`)
+## Student 2: Jiangran Gu (`LunaSakurakouji0327`)
 
-- **The component I "owned" and that I summarize here is best described as** *[One or two sentences. Name the thing. "The ingestion layer," "the model comparison and cross-validation," "the figure pipeline." Not "I helped with the analysis."]*
-- **You can find this contribution in a file called** `filename.qmd` **at lines** XX–YY. *[Add a permalink. List more than one file if the component genuinely spans them.]*
-- **Owning this component means** *[What did owning it actually involve — designing it? writing it? debugging it? deciding between alternatives? Use verbs. If someone else contributed to it, say what they did and where they claim it.]*
-- **The commits or PRs that are most relevant are** *[Two to four actual links. Not SHAs typed out as text — links we can click.]*
-- **The portion of the data science process that this effort contributes to is** *[Name the stage. Say why your part of it mattered to the project's findings.]*
-
----
-
-## Student 2: [Full Name] (`github-username`)
-
-- **The component I "owned" and that I summarize here is best described as**
-- **You can find this contribution in a file called** `filename.qmd` **at lines** XX–YY.
-- **Owning this component means**
-- **The commits or PRs that are most relevant are**
-- **The portion of the data science process that this effort contributes to is**
+- **The component I "owned" and that I summarize here is best described as** the driver's license status analysis — investigating whether holding a driver's license predicts communication apprehension using independent-samples t-test and boxplot visualization.
+- **You can find this contribution in a file called** `group_memo/Research_Memo_License_CA_2.qmd` **at lines** 1–160. [Permalink to Research_Memo_License_CA_2.qmd](https://github.com/[ORG]/[REPO]/blob/[COMMIT]/group_memo/Research_Memo_License_CA_2.qmd#L1-L160)
+- **Owning this component means** I formulated the research question about driver's license status and CA; I implemented the reverse-scoring scheme for PRCA items (Q1, Q3, Q5, Q13, Q15, Q18); I calculated the composite CA_total score; I performed the independent-samples t-test with Levene's test for equal variances; I created the boxplot visualization comparing CA scores by license status; and I interpreted the null finding while noting the reverse-scoring scheme's impact on results.
+- **The commits or PRs that are most relevant are** [add relevant commit/PR links]
+- **The portion of the data science process that this effort contributes to is** stage 5, **Select + Apply** — selecting t-test as the appropriate statistical test for comparing group means, and stage 6, **Check + Recheck** — using Levene's test to verify assumptions and Cohen's d to assess effect size.
 
 ---
 
-## Student 3: [Full Name] (`github-username`)
+## Student 3: Peiqi Li (`Peiqili196`)
 
-- **The component I "owned" and that I summarize here is best described as**
-- **You can find this contribution in a file called** `filename.qmd` **at lines** XX–YY.
-- **Owning this component means**
-- **The commits or PRs that are most relevant are**
-- **The portion of the data science process that this effort contributes to is**
-
----
-
-## Student 4: [Full Name] (`github-username`)
-
-- **The component I "owned" and that I summarize here is best described as**
-- **You can find this contribution in a file called** `filename.qmd` **at lines** XX–YY.
-- **Owning this component means**
-- **The commits or PRs that are most relevant are**
-- **The portion of the data science process that this effort contributes to is**
+- **The component I "owned" and that I summarize here is best described as** the visualization strategy analysis — creating scatterplots with fitted linear trend lines to illustrate the relationship between communication apprehension and transportation use across three outcomes (public transportation, ride-share, and overall transportation use).
+- **You can find this contribution in a file called** `group_memo/Peiqi_memo.qmd` **at lines** 1–258. [Permalink to Peiqi_memo.qmd](https://github.com/[ORG]/[REPO]/blob/[COMMIT]/group_memo/Peiqi_memo.qmd#L1-L258)
+- **Owning this component means** I designed the visual strategy using scatterplots with trend lines; I computed the mean communication-apprehension score across 12 items with appropriate reverse-coding; I combined transportation frequency and rides-per-day items into three composite outcomes; I created three scatterplots with fitted linear trend lines; and I evaluated the effectiveness of this visualization approach for showing weak negative associations. I noted the descriptive nature of conclusions and suggested nonparametric methods as next steps.
+- **The commits or PRs that are most relevant are** [add relevant commit/PR links]
+- **The portion of the data science process that this effort contributes to is** stage 7, **Visualization and Communication** — designing and implementing effective visualizations to communicate relationships between variables, with a focus on making the overall direction of relationships immediately visible while conveying data variability.
 
 ---
 
-## Student 5: [Full Name] (`github-username`)
+## Student 4: Yuhao Wang (`yuhaowang2025`)
 
-*[Delete this section if your group has four members.]*
+- **The component I "owned" and that I summarize here is best described as** the model comparison analysis — comparing three nested regression models (total CA, CA subscales, and interaction term) for predicting public transportation use frequency using RMSE and R² evaluation metrics.
+- **You can find this contribution in a file called** `group_memo/memo_yuhao.qmd` **at lines** 1–259. [Permalink to memo_yuhao.qmd](https://github.com/[ORG]/[REPO]/blob/[COMMIT]/group_memo/memo_yuhao.qmd#L1-L259)
+- **Owning this component means** I designed the three nested model specifications; I calculated CA_group and CA_interpersonal subscale scores; I implemented the model comparison using RMSE and R²; I created the RMSE comparison visualization; and I interpreted the results showing Model 3 as best-performing but with minimal improvement over simpler models. I also contributed to the main manuscript integration and coordinated the overall project structure.
+- **The commits or PRs that are most relevant are** [add relevant commit/PR links]
+- **The portion of the data science process that this effort contributes to is** stage 5, **Select + Apply** — selecting and comparing multiple model specifications, and stage 6, **Check + Recheck** — using RMSE and R² as evaluation metrics to determine optimal model complexity and assess predictive performance.
 
-- **The component I "owned" and that I summarize here is best described as**
-- **You can find this contribution in a file called** `filename.qmd` **at lines** XX–YY.
-- **Owning this component means**
-- **The commits or PRs that are most relevant are**
-- **The portion of the data science process that this effort contributes to is**
+---
+
+## Student 5: Jingyi Zhou (`JingyiZ-Created`)
+
+- **The component I "owned" and that I summarize here is best described as** the cross-cultural analysis — investigating how communication apprehension and public transportation/ride-share use differ by country of residence using violin plots with embedded box plots.
+- **You can find this contribution in a file called** `group_memo/CAandPTRSdifferbyCountry.qmd` **at lines** 1–223. [Permalink to CAandPTRSdifferbyCountry.qmd](https://github.com/[ORG]/[REPO]/blob/[COMMIT]/group_memo/CAandPTRSdifferbyCountry.qmd#L1-L223)
+- **Owning this component means** I designed the cross-cultural research question; I concatenated and merged multiple data files (FileA, FileB, FileC) by matching Prolific IDs; I implemented the coding of PRCA items on a 1–5 agreement scale with appropriate reverse-coding; I calculated composite CA and PTRS scores; I created violin plots with embedded box plots to visualize distributions across countries; and I focused the analysis on the four largest-sample countries (United States, United Kingdom, Ireland, Canada) for clearer interpretation.
+- **The commits or PRs that are most relevant are** [add relevant commit/PR links]
+- **The portion of the data science process that this effort contributes to is** stage 4, **Exploratory Analysis** — exploring patterns across categorical groups (countries), and stage 7, **Visualization and Communication** — using violin plots to effectively communicate distributional differences across groups.
 
 ---
 
@@ -113,8 +99,8 @@ The last bullet in each section asks which portion of the data science process y
 
 By adding your name below, each member affirms that the account of their own contribution is accurate, and that they have read the other four sections and believe them to be accurate as well.
 
-- [ ] [Full Name] (`github-username`) — [date]
-- [ ] [Full Name] (`github-username`) — [date]
-- [ ] [Full Name] (`github-username`) — [date]
-- [ ] [Full Name] (`github-username`) — [date]
-- [ ] [Full Name] (`github-username`) — [date]
+- [ ] Chao Ding (`cding56`) — 2026.08.05
+- [ ] Jiangran Gu (`LunaSakurakouji0327`)— 2026.08.05
+- [ ] Peiqi Li (`Peiqili196`)— 2026.08.05
+- [ ] Yuhao Wang (`yuhaowang2025`)— 2026.08.05
+- [ ] Jingyi Zhou (`JingyiZ-Created`) — 2026.08.05
